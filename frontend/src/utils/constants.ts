@@ -1,0 +1,48 @@
+export const MOODS = [
+  { id: 'happy', label: 'Happy', emoji: '😊', color: 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30' },
+  { id: 'sad', label: 'Sad', emoji: '😢', color: 'bg-blue-500/20 text-blue-400 border-blue-500/30' },
+  { id: 'relaxed', label: 'Relaxed', emoji: '😌', color: 'bg-green-500/20 text-green-400 border-green-500/30' },
+  { id: 'excited', label: 'Excited', emoji: '🤩', color: 'bg-orange-500/20 text-orange-400 border-orange-500/30' },
+  { id: 'romantic', label: 'Romantic', emoji: '💕', color: 'bg-pink-500/20 text-pink-400 border-pink-500/30' },
+  { id: 'mind-blowing', label: 'Mind Blowing', emoji: '🤯', color: 'bg-purple-500/20 text-purple-400 border-purple-500/30' },
+  { id: 'dark', label: 'Dark', emoji: '🌑', color: 'bg-gray-500/20 text-gray-400 border-gray-500/30' },
+  { id: 'motivational', label: 'Motivational', emoji: '💪', color: 'bg-red-500/20 text-red-400 border-red-500/30' },
+  { id: 'comfort', label: 'Comfort', emoji: '🤗', color: 'bg-teal-500/20 text-teal-400 border-teal-500/30' },
+];
+
+export const GENRES = [
+  { id: 28, name: 'Action' },
+  { id: 12, name: 'Adventure' },
+  { id: 16, name: 'Animation' },
+  { id: 35, name: 'Comedy' },
+  { id: 80, name: 'Crime' },
+  { id: 99, name: 'Documentary' },
+  { id: 18, name: 'Drama' },
+  { id: 10751, name: 'Family' },
+  { id: 14, name: 'Fantasy' },
+  { id: 36, name: 'History' },
+  { id: 27, name: 'Horror' },
+  { id: 10402, name: 'Music' },
+  { id: 9648, name: 'Mystery' },
+  { id: 10749, name: 'Romance' },
+  { id: 878, name: 'Science Fiction' },
+  { id: 10770, name: 'TV Movie' },
+  { id: 53, name: 'Thriller' },
+  { id: 10752, name: 'War' },
+  { id: 37, name: 'Western' },
+];
+
+export const LANGUAGES = [
+  { code: 'en', name: 'English' },
+  { code: 'hi', name: 'Hindi' },
+  { code: 'es', name: 'Spanish' },
+  { code: 'fr', name: 'French' },
+  { code: 'de', name: 'German' },
+  { code: 'it', name: 'Italian' },
+  { code: 'ja', name: 'Japanese' },
+  { code: 'ko', name: 'Korean' },
+  { code: 'zh', name: 'Chinese' },
+  { code: 'pt', name: 'Portuguese' },
+  { code: 'ru', name: 'Russian' },
+  { code: 'ar', name: 'Arabic' },
+];
