@@ -48,4 +48,10 @@ Developed, new ideas and suggestions are welcome
 
 ## Demo
 
-![Demo](assets/demo.gif)
+![Demo](Demo/demo.gif)
+
+## Live Demo
+
+Frontend: https://cine-mind-ai-two.vercel.app/
+
+Backend API: https://cinemind-ai-j49n.onrender.com//docs
