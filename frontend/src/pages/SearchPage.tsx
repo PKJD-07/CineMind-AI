@@ -4,9 +4,10 @@ import { favoriteService } from '../services/favorites';
 import SearchBar from '../components/movies/SearchBar';
 import MovieGrid from '../components/movies/MovieGrid';
 import toast from 'react-hot-toast';
+import { Movie } from '../types';
 
 const SearchPage: React.FC = () => {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState<Movie[]>([]);
   const [favorites, setFavorites] = useState<number[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);

@@ -90,17 +90,16 @@ export interface RecommendationRequest {
 
 export interface MovieRecommendation {
   title: string;
-    reason: string;
-    confidence: number;
+  reason: string;
+  confidence: number;
 
-    mood_match?: string;
-    why_youll_like_it?: string;
-
-    poster_path?: string;
-    rating?: number;
-    year?: string;
+  tmdb_id?: number;
+  poster_path?: string | null;
+  rating?: number;
+  year?: string;
+  mood_match?: string;
+  why_youll_like_it?: string;
 }
-
 export interface RecommendationResponse {
   recommendations: MovieRecommendation[];
   user_preferences: {

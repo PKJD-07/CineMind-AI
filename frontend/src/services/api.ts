@@ -28,7 +28,9 @@ api.interceptors.request.use(
 api.interceptors.response.use(
   (response) => response,
   (error: AxiosError) => {
-    const message = error.response?.data?.detail || 'Something went wrong';
+    const message =
+      (error.response?.data as { detail?: string })?.detail ??
+      "Something went wrong";
     
     if (error.response?.status === 401) {
       localStorage.removeItem('token');

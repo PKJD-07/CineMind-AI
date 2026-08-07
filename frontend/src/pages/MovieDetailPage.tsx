@@ -66,7 +66,7 @@ const MovieDetailPage: React.FC = () => {
         await favoriteService.addFavorite({
           movie_id: movie.id,
           title: movie.title,
-          poster_path: movie.poster_path,
+          poster_path: movie.poster_path ?? undefined,
           rating: movie.vote_average,
           genres: movie.genres?.map((g: any) => g.name).join(',') || '',
         });
