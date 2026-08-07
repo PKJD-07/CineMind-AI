@@ -253,6 +253,6 @@ Suggestions, feature requests, and contributions are welcome through GitHub Issu
 
 ## Author
 
-**Pavan Kumar**
+**Pavan Kumar J D**
 
 GitHub: https://github.com/PKJD-07
