@@ -83,10 +83,12 @@ const Footer: React.FC = () => {
 
         <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © 2024 CineMind. All rights reserved.
+            © {new Date().getFullYear()} CineMind AI
+
+            Powered by TMDB & Groq AI
           </p>
           <p className="text-gray-500 text-sm flex items-center mt-2 md:mt-0">
-            Made with <FiHeart className="w-4 h-4 text-red-500 mx-1" /> by CineMind Team
+            Made with <FiHeart className="w-4 h-4 text-red-500 mx-1" /> by Pavan Kumar J D
           </p>
         </div>
       </div>

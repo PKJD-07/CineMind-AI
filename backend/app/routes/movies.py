@@ -14,7 +14,7 @@ async def search_movies(
     language: Optional[str] = None,
     year: Optional[int] = None,
     page: int = 1,
-    current_user: dict = Depends(get_current_user)
+    
 ):
     """Search movies with filters."""
     try:

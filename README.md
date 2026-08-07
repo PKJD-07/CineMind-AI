@@ -4,31 +4,48 @@ AI-powered movie recommendation platform that delivers personalized movie sugges
 
 ## Features
 
-- 🎯 Personalized recommendations
-- 🤖 AI-generated recommendation explanations
-- 😊 Mood-based movie discovery
-- ❤️ Favorites management
-- 📊 User dashboard
-- 🔍 Movie search powered by TMDB
+🔐 JWT Authentication
+
+🎬 TMDB Movie Search
+
+❤️ Favorites Management
+
+🤖 AI-Powered Personalized Recommendations
+
+🧠 AI Match Score
+
+📊 Dashboard Analytics
+
+🌙 Modern Responsive UI
+
+⚡ FastAPI Backend
+
+🔍 Advanced Filtering
 
 ## Tech Stack
 
-### Frontend
-- React
-- TypeScript
-- Tailwind CSS
+| Frontend | Backend | Database | AI   | API  |
+| -------- | ------- | -------- | ---- | ---- |
+| React    | FastAPI | SQLite   | Groq | TMDB |
 
-### Backend
-- FastAPI
-- Python
+## Installation
 
-### Database
-- SQLite
+git clone
 
-### APIs
-- TMDB API
-- DeepSeek API
+cd CineMind-AI
+
+pip install -r requirements.txt
+
+npm install
+
+python run.py
+
+npm run dev
 
 ## Status
 
-🚧 Currently under development.
+Developed, new ideas and suggestions are welcome
+
+## Demo
+
+![Demo](assets/demo.gif)

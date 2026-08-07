@@ -53,17 +53,20 @@ const RecommendationCard: React.FC<RecommendationCardProps> = ({ recommendation,
           </div>
 
           {/* Reason */}
-          <div className="bg-gray-800/50 rounded-lg p-4 mb-3">
-            <div className="flex items-start space-x-2">
-              <FiStar className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
-              <div>
-                <p className="text-sm font-medium text-primary-400 mb-1">Why this movie?</p>
-                <p className="text-gray-300 text-sm leading-relaxed">
-                  {recommendation.reason}
-                </p>
-              </div>
-            </div>
+          <p>{recommendation.reason}</p>
+
+          {recommendation.why_youll_like_it && (
+              <div className="mt-3">
+                  <strong>Why You'll Like It</strong>
+                  <p>{recommendation.why_youll_like_it}</p>
           </div>
+)}
+
+{recommendation.mood_match && (
+    <span className="badge">
+        Mood Match: {recommendation.mood_match}
+    </span>
+)}
 
           {/* Rating */}
           {recommendation.rating && (

@@ -6,17 +6,14 @@ from app.database import get_db
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
 @router.post("/register", response_model=TokenResponse)
-async def register(user_data: UserRegister, db = Depends(get_db)):
-    """Register a new user."""
+async def register(user_data: UserRegister, db=Depends(get_db)):
     try:
-        result = await AuthService.register_user(db, user_data)
-        return result
+        return await AuthService.register_user(db, user_data)
     except ValueError as e:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=str(e)
         )
-
 @router.post("/login", response_model=TokenResponse)
 async def login(user_data: UserLogin, db = Depends(get_db)):
     """Login user."""

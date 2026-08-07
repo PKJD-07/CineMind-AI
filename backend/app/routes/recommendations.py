@@ -33,7 +33,8 @@ async def get_recommendations(
         enhanced_recommendations = []
         for rec in ai_response["recommendations"]:
             try:
-                # Search TMDB for the movie                search_result = await tmdb_service.search_movies(query=rec["title"], page=1)
+                # Search TMDB for the movie                
+                search_result = await tmdb_service.search_movies(query=rec["title"], page=1)
                 
                 if search_result.get("results") and len(search_result["results"]) > 0:
                     movie = search_result["results"][0]
@@ -41,6 +42,8 @@ async def get_recommendations(
                         "title": rec["title"],
                         "reason": rec["reason"],
                         "confidence": rec["confidence"],
+                        "mood_match": rec.get("mood_match"),
+                        "why_youll_like_it": rec.get("why_youll_like_it"),
                         "tmdb_id": movie.get("id"),
                         "poster_path": f"https://image.tmdb.org/t/p/w342{movie.get('poster_path')}" if movie.get('poster_path') else None,
                         "rating": movie.get("vote_average"),
