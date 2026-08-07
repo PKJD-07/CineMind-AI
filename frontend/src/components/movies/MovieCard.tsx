@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiStar, FiClock, FiHeart } from 'react-icons/fi';
 import { Movie } from '../../types';
-import { formatRating, getRatingColor, truncateText } from '../../utils/helpers';
+import { formatRating, getRatingColor, } from '../../utils/helpers';
 
 interface MovieCardProps {
   movie: Movie | any;

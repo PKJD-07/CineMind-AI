@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { FiFilm, FiSearch, FiHeart, FiBarChart2, FiArrowRight, FiStar, FiZap } from 'react-icons/fi';
+import { FiSearch, FiHeart, FiBarChart2, FiArrowRight, FiStar, FiZap } from 'react-icons/fi';
 
 const features = [
   {

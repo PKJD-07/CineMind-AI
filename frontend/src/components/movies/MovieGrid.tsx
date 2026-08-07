@@ -3,7 +3,6 @@ import MovieCard from './MovieCard';
 import LoadingSpinner from '../ui/LoadingSpinner';
 import EmptyState from '../ui/EmptyState';
 import { FiFilm } from 'react-icons/fi';
-import { Movie } from '../../types';
 
 interface MovieGridProps {
   movies: any[];

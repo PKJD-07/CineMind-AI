@@ -12,7 +12,6 @@ import {
   FiTrendingUp,
   FiFilm,
   FiSearch,
-  FiArrowRight,
   FiClock,
 } from 'react-icons/fi';
 import { formatRelativeDate } from '../utils/helpers';

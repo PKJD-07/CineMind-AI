@@ -5,17 +5,14 @@ import { favoriteService } from '../services/favorites';
 import LoadingSpinner from '../components/ui/LoadingSpinner';
 import Button from '../components/ui/Button';
 import Chip from '../components/ui/Chip';
-import MovieGrid from '../components/movies/MovieGrid';
 import { Movie } from '../types';
 import {
   FiClock,
   FiCalendar,
-  FiDollarSign,
   FiStar,
   FiHeart,
   FiPlay,
   FiUser,
-  FiFilm,
 } from 'react-icons/fi';
 import { formatRuntime, formatCurrency, formatDate } from '../utils/helpers';
 import toast from 'react-hot-toast';
