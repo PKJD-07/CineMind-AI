@@ -10,8 +10,7 @@ const SearchPage: React.FC = () => {
   const [movies, setMovies] = useState<Movie[]>([]);
   const [favorites, setFavorites] = useState<number[]>([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
+
 
   useEffect(() => {
     loadFavorites();
@@ -28,11 +27,9 @@ const SearchPage: React.FC = () => {
 
   const handleSearch = async (params: any) => {
     setIsLoading(true);
-    setCurrentPage(1);
     try {
       const data = await movieService.searchMovies({ ...params, page: 1 });
       setMovies(data.results);
-      setTotalPages(data.total_pages);
     } catch (error) {
       console.error('Search failed:', error);
     } finally {
