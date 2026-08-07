@@ -54,4 +54,4 @@ Developed, new ideas and suggestions are welcome
 
 Frontend: https://cine-mind-ai-two.vercel.app/
 
-Backend API: https://cinemind-ai-j49n.onrender.com//docs
+Backend API: https://cinemind-ai-j49n.onrender.com/docs
